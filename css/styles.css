@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+	font-family: 'Saira Condensed', sans-serif;
+	font-size: 16px;
+	background: #13283E;
+	color: #CCE3DE;
+}
+
+body{
+	margin: 0;
+	line-height: 1.5;
+	color: #CCE3DE;
+	font-size: 1rem;
+}
+
+header {
+    padding: 1.5rem;
+    background: #13283E;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header img{
+	max-height: 75px;
+	flex-basis: 100%;
+	order: 1;
+	object-fit: contain;
+}
+
+header a{
+	color: #CCE3DE;
+    margin-right: 1rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    flex-basis: 25%;
+    order: 2;
+    text-align: center;
+
+}
+
+button{
+	background: #13283E;
+	color: #CCE3DE;
+    margin-right: 1rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+}
+
+header a:hover,button:hover{
+	background-color: #CCE3DE;
+	color: #13283E;
+}
+
+#active-button{
+	background-color: #CCE3DE;
+	color: #13283E;
+}
+
+
+.heading{
+	text-align: left;
+	font-family: 'Bree Serif', serif;
+}
+
+
+.masthead{
+	background-image: url('../img/bg.jpg');
+	background-size: cover;
+	color: #CCE3DE;
+	    text-align: center;
+    color: #000;
+    padding: 4rem;
+    background-position: center;
+}
+
+.main-content{
+	background-color: rgba(90, 112, 120, 0.9);
+	max-width: 75rem;
+    padding: 20px 30px;
+    margin: 0 auto;
+}
+
+.main-content img{
+	max-width: 100%;
+	height: auto;
+}
+
+footer{
+    color: #CCE3DE;
+    margin: 1rem;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+footer *{
+	color: #CCE3DE;
+}
+
+footer div.social-links{
+    margin: 0;
+    padding: 0;
+    padding-top: 1.5rem;
+}
+
+footer div.social-links a{
+    display: block;
+    margin: 0 1rem;
+    text-decoration: none;
+    margin-left: 0;
+}
+footer div{
+	
+    /* display: flex; */
+
+}
+
+
+.grid{
+	display: inline-block;
+}
+
+.grid img{
+	padding: 0;
+    float: none;
+    width: 100%;
+}
+
+.grid figure{
+	display: inline-block;
+	width: 100%;
+	margin:0;
+	margin-bottom: 2rem;
+}
+
+
+/*60rem*/
+@media (min-width: 60rem) {
+	body{
+		font-size: 1.5rem;
+	}
+
+
+	.new-content > img{
+		float: left;
+		width: 35%;
+	}
+	
+	.new-content h1 { grid-area: 1 / 1 / 2 / 3; }
+	.new-content > img { 
+		padding: 0 2rem;
+	    padding-top: 1rem;
+	 }
+	.new-content p { grid-area: 2 / 2 / 3 / 3; 
+	    padding: 2rem;
+	    padding-top: 0;
+    }
+
+
+	.grid figure{
+		display: inline-block;
+	    width: 45%;
+    	margin: 0 2%;
+		margin-bottom: 2rem;
+	}
+
+}
+
+@media (min-width: 80rem){
+header img{
+	flex-basis: 0%;
+}
+	.grid figure{
+		display: inline-block;
+		width: 28%;
+		margin-bottom: 2rem;
+	}
+}
+
